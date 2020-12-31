@@ -1,0 +1,18 @@
+syntax = "proto2";
+option go_package = "core";
+
+message serializedMessageData {
+        required bytes Data = 1;
+        // deprecated v0.5.x metadata
+        // map<string, bytes> Metadata = 2;
+        optional bytes Metadata = 3;
+}
+
+message serializedMessage {
+        required uint64 StreamID = 1;
+        required serializedMessageData Data = 2;
+        optional uint64 PrevStreamID = 3;
+        optional uint64 OrigStreamID = 4;
+        optional int64 Timestamp = 5;
+        optional serializedMessageData Original = 6;
+}

@@ -1,0 +1,5 @@
+# /etc/sysconfig/gollum
+
+CONFIG="/etc/gollum/gollum.conf"
+ARGUMENTS=""
+PIDFILE="/var/run/gollum.pid"

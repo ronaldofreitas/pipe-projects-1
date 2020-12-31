@@ -1,0 +1,42 @@
+# IDEs / os related
+**/.DS_Store
+**/*~
+.vscode
+.idea
+
+# git
+.gitmodules
+
+# gollum
+gollum
+gollum.pid
+gollum.exe
+
+contrib/*
+!contrib/native
+!contrib/deprecated
+contrib_*.go*
+
+# docs
+docs/_build.html
+docs/generator/rst_generator
+
+# files
+*.prof
+*.tar.gz
+*.zip
+*.cov
+
+# debugging
+test
+debug
+
+# vendor
+vendor/**/*
+!vendor/**/
+!vendor/**/*.go
+!vendor/**/*.s
+!vendor/**/*.h
+!vendor/**/*.c
+!vendor/**/LICENSE
+vendor/**/*_test.go
